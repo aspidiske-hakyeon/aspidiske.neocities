@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aspidiske archive</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/skyline.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/x-icon" href="/asp_favicon.ico">
+  </head>
+  <body>
+    <!-- Everything here goes inside of your <body></body> tags! -->
+<!-- this layout is based off of an old layout from createBlog https://www.createblog.com/website-templates/36491-skyline/ -->
+<div class="container">
+  <header>
+  </header>
+  <nav>
+    <ul class="nav">
+            <li><a href="/index.html">Home</a></li>
+             <li><a href="/sitemap.html">Map</a></li>
+             <li><a href="/gallery.html">Gallery</a></li>
+             <li><a href="/misc.html">Misc</a></li>
+             <li><a href="/alltags.html">Tags</a></li>
+             <li><a href="/affiliates.html">Affiliates</a></li>
+        </ul></nav>
+  <div class="flex">
+    <aside class="left-sidebar">
+      <section>
+        <div class="subtitle">Profile</div>
+        <div>
+        <img class="sidebar-profile" src="https://aspidiske.neocities.org/pfp.png">
+          <p><b>Aspidiske/學然</b><br>
+          they/them<br>
+          i make art. mostly fanart, with some original art thrown in. sometimes i write or make music.</p>
+        </div>
+        </section>
+        
+      <section>
+        <div class="subtitle">Other Sites</div>     
+        <ul class="links">
+             <li><a href="https://asp1diske-art.tumblr.com/">tumblr</a></li>
+             <li><a href="https://archiveofourown.org/users/Aspidiske">ao3</a></li>
+             <li><a href="https://ko-fi.com/aspidiske">ko-fi</a></li>
+             <li><a href="https://cohost.org/Aspidiske-Art">cohost</a></li>
+             <li><a href="https://www.youtube.com/@zetetix9824">youtube</a></li>
+             <li><a href="https://zetetix08.bandcamp.com/">bandcamp</a></li>
+        </ul>
+        </section>
+        
+
+    </aside>
+    
+    <main>
+      <article>
+        <div class="subtitle">work in progress</div>
+        <div><p>currently archiving my art from tumblr</p></div>
+      </article>
+      
+      <article>
+        <div class="subtitle">guestbook</div>
+        <div><p><a href="http://aspidiske.123Guestbook.com/" target="_self">check out the guestbook</a></p></div>
+      </article>
+      
+      <article>
+        <div class="subtitle">Recent Posts</div>
+        <div id="recentpostlistdiv"></div>
+        <script src="/tagsScript.js"></script>
+      </article>
+
+    </main>
+    <aside class="right-sidebar">
+      <section>
+        <div class="subtitle">About</div>
+        <div>
+        <p>this is a place for me to share and archive my art. do not repost on other sites or use for AI training.</p>
+        </div>
+      </section>
+      
+      <section>
+        <form role="search" id="form1">
+         <input type="search" id="query" name="q"
+          placeholder="Search..."
+          aria-label="Search through site content">
+         <button id="searchbutton">
+         <svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+         </button>
+        </form>
+        <script>
+          const f = document.getElementById('form1');
+          const q = document.getElementById('query');
+          const duckduckgo = 'https://duckduckgo.com/?q=site%3A+';
+          const site = 'aspidiske.neocities.org';
+ 
+          function submitted(event) {
+          event.preventDefault();
+          const url = duckduckgo + site + '+' + q.value;
+          const win = window.open(url, '_blank');
+          win.focus();
+          }
+
+        f.addEventListener('submit', submitted);
+        </script>
+        </section>
+        
+      <section>
+        <div class="subtitle">Credits</div>          <ul class="links">
+            <li><a href="https://sadgrl.online">theme by sadgirl.online</a></li>
+             <li><a href="https://zonelets.net/">built with Zonelets</a></li>
+             <li><a href="https://3legged.neocities.org/journal/posts/2023-03-12-Creating-A-Zonelets-Tagging-System">tag system by 3legged</a></li>
+        </ul>
+          
+        </section>
+    </aside>
+  </div>
+  <footer>This layout was lovingly re-crafted by <a href="https://sadgrl.online">sadgrl.online</a></footer>
+</div>
+<p> </p>
+  </body>
+</html>
