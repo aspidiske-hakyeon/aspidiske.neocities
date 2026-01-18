@@ -35,7 +35,7 @@ module.exports = function (eleventyConfig) {
   // This defines the input and output directories
   return {
     dir: {
-      input: "content",
+      input: "src",
       output: "public",
     },
   };
